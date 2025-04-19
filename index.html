@@ -9,6 +9,8 @@
 <body>
   <h1>Rock Paper Scissors</h1>
   
+  <button onclick="toggleDarkMode()" class="dark-mode-btn">🌓 Toggle Dark Mode</button>
+
   <div class="choices">
     <button onclick="play('rock')">🪨 Rock</button>
     <button onclick="play('paper')">📄 Paper</button>
@@ -25,6 +27,8 @@
     <p id="computer-choice"></p>
     <h2 id="winner"></h2>
   </div>
+
+  <button onclick="resetGame()" class="reset-btn">🔄 Reset Game</button>
 
   <script src="script.js"></script>
 </body>
