@@ -30,4 +30,18 @@ function play(userChoice) {
     document.getElementById('user-score').textContent = userScore;
     document.getElementById('computer-score').textContent = computerScore;
   }
+  function resetGame() {
+    userScore = 0;
+    computerScore = 0;
   
+    document.getElementById('user-score').textContent = 0;
+    document.getElementById('computer-score').textContent = 0;
+  
+    document.getElementById('user-choice').textContent = '';
+    document.getElementById('computer-choice').textContent = '';
+    document.getElementById('winner').textContent = '';
+  }
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+   
